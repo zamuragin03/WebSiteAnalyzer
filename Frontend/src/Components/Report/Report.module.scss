@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+        color: #000;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    h2 {
+        color: #000;
+        font-size: 32px;
+        font-weight: 700;
+
+    }
+
+    h3 {
+        text-indent: 20px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+
+    .summary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pages {
+        display: flex;
+        gap: 100px;
+        width: 100%;
+        overflow-x: scroll;
+        align-items: flex-start;
+    }
+    .external_links{
+        padding: 0 20px;
+    }
+    .load_time_wrapper{
+        display: flex;
+        padding: 10px 0;
+        gap: 25px;
+        width: 100%;
+        overflow-x: scroll;
+        align-items: flex-start;
+
+    }
+}

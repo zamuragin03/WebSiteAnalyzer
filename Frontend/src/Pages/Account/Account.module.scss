@@ -1,0 +1,207 @@
+.wrapper {
+    padding: 100px 50px;
+    display: flex;
+    gap: 100px;
+
+    .nav_bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .photo_and_modules {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .avatar_and_name {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+
+                .name_and_email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    .username {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    .email {
+                        font-size: 16px;
+                        font-weight: 300
+                    }
+                }
+            }
+
+            .modules {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .module {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    height: 32px;
+                    padding: 0 12px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+
+                .module:hover {
+                    background: #fafdff;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                }
+
+                .module_selected {
+                    background: #F1F3F4;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .others {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .module {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                height: 32px;
+                padding: 0 12px;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .module_selected {
+                background: #F1F3F4;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .selected_module {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex: 1;
+
+        .selected_module_title {
+            color: #000;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}
+
+.table {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    border: 2px solid #F1F3F4;
+
+    .header {
+        display: flex;
+        padding: 14px 32px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-bottom: 2px solid #F1F3F4;
+
+
+        .header_div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .url {
+                width: calc(100% / 3);
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .last_check {
+                width: calc(100% / 3);
+                color: #000;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .results {
+                width: calc(100% / 3);
+                color: #000;
+                text-align: right;
+                font-size: 16px;
+                font-weight: 600
+            }
+        }
+
+    }
+
+    .website {
+        padding: 14px 32px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 20px 20px 0px 0px;
+
+        .website_div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .url {
+                width: calc(100% / 3);
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .last_check {
+                width: calc(100% / 3);
+                color: #000;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .results {
+                width: calc(100% / 3);
+                color: #000;
+                text-align: right;
+                font-size: 16px;
+                font-weight: 300
+            }
+        }
+    }
+}
+.module_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 70vh;
+}

@@ -1,0 +1,42 @@
+.mainpage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 160px;
+    gap: 32px;
+    // flex: 1 0 0;
+
+
+    .pic {
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        min-height: 480px;
+        padding: 320px 0px 42px 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        gap: 32px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.40) 100%), url("../../assets/background.png") lightgray 50% / cover no-repeat;
+
+        .main_title {
+            min-width: 300px;
+            color: #FFF;
+            font-family: "Inter", sans-serif;
+            font-size: 48px;
+            letter-spacing: -2px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .secondary_title {
+            max-width:80%;
+            color: #FFF;
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            letter-spacing: -2px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-align: center  ;
+        }
+    }
+}

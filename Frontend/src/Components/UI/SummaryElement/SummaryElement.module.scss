@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   
+    display: flex;
+    padding: 25px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 3px solid #E7EBEE;
+    min-width: 150px;
+    max-width: 300px;
+   
+    .title{
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .value{
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .variance{
+        align-self: stretch;
+        color: #14C800;
+        font-size: 18px;
+        font-weight: 300;       
+    }
+}

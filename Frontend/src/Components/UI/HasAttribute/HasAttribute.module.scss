@@ -1,0 +1,17 @@
+.attribute {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .title {
+        color: #000;
+        font-size: 12px;
+        font-weight: 700;
+
+    }
+    .additional{
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

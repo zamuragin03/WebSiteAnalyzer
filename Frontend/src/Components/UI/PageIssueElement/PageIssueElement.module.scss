@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 25px;
+    border: 3px solid #E7EBEE;
+    padding: 10px 15px;
+    a{
+
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+       
+    }
+}

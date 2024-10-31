@@ -1,0 +1,22 @@
+.wrapper {
+
+    display: flex;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1px solid #637587;
+    .url{
+        color: #000;
+        font-size: 18px;
+        font-weight: 300;
+       
+    }
+    span {
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}

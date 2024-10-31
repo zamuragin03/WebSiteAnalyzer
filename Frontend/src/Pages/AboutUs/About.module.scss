@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 6em;
+    color: var(--white-color);
+
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 200;
+    }
+}

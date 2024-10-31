@@ -1,0 +1,82 @@
+.LoginForm {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background-color: rgba(120, 120, 120, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 500;
+}
+
+.LoginForm.active {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginFormContent {
+    padding: 1em 2em 1em 2em;
+    flex-direction: column;
+    background: var(--white-color);
+    border-radius: 10px;
+    min-width: 40%;
+    min-height: 30vh;
+    display: flex;
+    gap: 1em;
+    .cross{
+        text-align: right;
+    }
+    .cross:hover{
+        cursor: pointer;
+        filter: opacity(0.8);
+    }
+}
+
+.register, .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    .welcome_title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .secondary_title {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .fields_wrapper {
+        display: flex;
+        flex-direction: column;
+        min-width: 80%;
+        align-items: center;
+        gap: 16px;
+        .already_has {
+            text-decoration: underline;
+            font-weight: 400;
+            text-align: center;
+            color: var(--black-color);
+            opacity: 0.5;
+        }
+        .already_has:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        .fields {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+    .fields_wrapper>*{
+        min-width: 80%;
+
+    }
+}
