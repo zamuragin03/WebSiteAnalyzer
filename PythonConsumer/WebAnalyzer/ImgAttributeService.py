@@ -23,7 +23,7 @@ class ImageAttributeChecker:
             title = img.get('title')
             if not alt or not title:
                 results.append({
-                    'src': img['src'],
+                    'src': self.url+ '/'+img['src'],
                     'alt': alt,
                     'title': title,
                 })
@@ -31,4 +31,4 @@ class ImageAttributeChecker:
         return results
 
     def get_image_penalty(self) -> float:
-        return len(self.results)/len(self.images)
+        return (len(self.images)-len(self.results))/len(self.images)

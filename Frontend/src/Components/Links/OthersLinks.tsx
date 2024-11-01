@@ -7,11 +7,14 @@ type Props = {
 
 const Others: FC<Props> = ({ links }: Props) => {
     return (
-        <div className={cls.wrapper}>
+        <div className={[cls.wrapper].join(' ')}>
             <img src={others} alt="" />
+            <div className={cls.others}>
+
             {links.map(el =>
                 <span>{el}</span>
             )}
+            </div>
         </div>
     )
 }

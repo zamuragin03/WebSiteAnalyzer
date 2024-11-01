@@ -7,13 +7,15 @@ class PageChecker:
 
     def __init__(self, result) -> None:
         self.result = result
+        self.results = []
 
     def check_pages(self) -> list[dict]:
         results = []
         for result in self.result:
             page_info = self.check_page(result.get('url'), result.get('html'))
             results.append(page_info)
-            self.results = results
+            
+        self.results = results
         return results
 
     def check_page(self, url: str, html: str) -> dict:
@@ -37,7 +39,7 @@ class PageChecker:
 
         return {
             'url': url,
-            'h1': h1.text.strip() if h1 else None,
+            'h1': h1.text.strip() if h1 != '' else None,
             'title': title.text.strip() if title else None,
             'description': description['content'].strip() if description else None,
             'h1_count': h1_count,
@@ -56,7 +58,7 @@ class PageChecker:
         pages_penalty = 0
         for result in self.results:
             page_penalty = 0
-            if result.get('h1') is None:
+            if result.get('h1') is None or result.get('h1') == '':
                 page_penalty += 1
             if result.get('h1') == result.get('title'):
                 page_penalty += 1

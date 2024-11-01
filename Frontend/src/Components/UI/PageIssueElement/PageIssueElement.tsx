@@ -8,8 +8,8 @@ const PageIssueElement: FC<IPageDetail> = (props: IPageDetail) => {
     return (
         <div className={cls.wrapper}>
             <NavLink to={props.url}>{props.url}</NavLink>
-            <HasAttribute title='Title' has_value={!!props.title} />
-            <HasAttribute title='Description' has_value={!!props.description} additianal_text={props.description ? '(' + props.description + ')' : ''} />
+            <HasAttribute title='Title' has_value={!!props.title} additianal_text={props.title ? '(' + props.title + ')' : ''} />
+            <HasAttribute title='Description' has_value={!!props.description} />
             <HasAttribute title='h1' has_value={!!props.h1} additianal_text={props.h1 ? '(' + props.h1 + ')' : ''} />
             <HasAttribute title='h1' has_value={props.h1_count > 0} additianal_text={'(' + props.h1_count + ')'} />
             <HasAttribute title='h2' has_value={true} additianal_text={'(' + props.h2_count + ')'} />

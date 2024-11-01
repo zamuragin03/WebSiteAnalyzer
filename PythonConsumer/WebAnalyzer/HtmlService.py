@@ -17,7 +17,6 @@ class HTMLService:
         for url in self.urls:
             (html, status_code), load_time = self.check_page(url)
 
-            # Извлекаем относительный путь из URL
             parsed_url = urlparse(url)
             relative_path = parsed_url.path
 
@@ -28,7 +27,8 @@ class HTMLService:
             time_results.append({'url': relative_path, 'load_time': load_time})
 
         self.html_results = html_results
-        self.time_results = time_results
+        self.time_results = sorted(
+            time_results, key=lambda x: x.load_time, reverse=True)
         self.broken_links_result = broken_links_result
 
     def get_overall_performance_score(self):

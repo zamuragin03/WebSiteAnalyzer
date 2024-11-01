@@ -34,18 +34,35 @@
         gap: 100px;
         width: 100%;
         overflow-x: scroll;
-        align-items: flex-start;
+        align-items: center;
     }
-    .external_links{
+    .external_links, .overall_tech{
         padding: 0 20px;
     }
+    .overall_tech{
+        display: flex;
+        flex-direction: column;
+        gap:5px
+    }
+    
     .load_time_wrapper{
         display: flex;
         padding: 10px 0;
         gap: 25px;
         width: 100%;
         overflow-x: scroll;
+        align-items:center;
+    }
+    .images_wrapper{
+        display: flex;
+        padding: 10px 0;
+        gap: 25px;
+        width: 100%;
+        overflow-x: scroll;
         align-items: flex-start;
-
+    }
+    .vitals{
+        display: flex;
+        justify-content: space-between;
     }
 }

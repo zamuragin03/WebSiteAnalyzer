@@ -10,7 +10,11 @@ const Telegram: FC<Props> = ({ link }: Props) => {
     return (
         <div className={cls.wrapper}>
             <img src={tg} alt="" />
-            <NavLink to={link ? link : ''}>{link ? link : 'Отсутствует'}</NavLink>
+            {link ?
+                <NavLink to={link ? link : ''}>{link ? link : 'Отсутствует'}</NavLink>
+                :
+                <span>{link ? link : 'Отсутствует'}</span>
+            }
         </div>
     )
 }

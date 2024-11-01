@@ -31,7 +31,7 @@ export interface IPageDetail {
     h3_count: number,
     h4_count: number,
     h5_count: number,
-    og_title: string,
+    og_title: string | null,
     og_description: string | null,
     og_image: string | null,
     og_url: string | null,
